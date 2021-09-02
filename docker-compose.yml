@@ -1,0 +1,63 @@
+version: '3.9'
+
+services:
+  ucd-server:
+    container_name: ucd-server
+    hostname: ucd-server
+    build:
+      context: ./ucd-server
+      args:
+        JFROG_UCD_URL: ""
+        JFROG_API_KEY: ""
+    ports:
+      - "8080:8080"
+  ucd-agent-0:
+    container_name: ucd-agent-0
+    hostname: ucd-agent-0
+    build:
+      context: ./ucd-agent
+  ucd-agent-1:
+    container_name: ucd-agent-1
+    hostname: ucd-agent-1
+    build:
+      context: ./ucd-agent
+  ucd-agent-2:
+    container_name: ucd-agent-2
+    hostname: ucd-agent-2
+    build:
+      context: ./ucd-agent
+  ucd-agent-3:
+    container_name: ucd-agent-3
+    hostname: ucd-agent-3
+    build:
+      context: ./ucd-agent
+  ucd-agent-4:
+    container_name: ucd-agent-4
+    hostname: ucd-agent-4
+    build:
+      context: ./ucd-agent
+  ucd-agent-5:
+    container_name: ucd-agent-5
+    hostname: ucd-agent-5
+    build:
+      context: ./ucd-agent
+  ucd-agent-6:
+    container_name: ucd-agent-6
+    hostname: ucd-agent-6
+    build:
+      context: ./ucd-agent
+  ucd-agent-7:
+    container_name: ucd-agent-7
+    hostname: ucd-agent-7
+    build:
+      context: ./ucd-agent
+  ucd-agent-8:
+    container_name: ucd-agent-8
+    hostname: ucd-agent-8
+    build:
+      context: ./ucd-agent
+  ucd-agent-9:
+    container_name: ucd-agent-9
+    hostname: ucd-agent-9
+    build:
+      context: ./ucd-agent
